@@ -1,4 +1,9 @@
-# Skill: initialize-field
+---
+name: Forest-initialize-field
+description: Create a new field in a FOREST vault or convert an existing folder into a field. Use when the user wants to add a new long-running area or theme — phrases like "create field", "new field", "add area", "заведи поле", "новое поле".
+---
+
+# Skill: Forest-initialize-field
 
 Создай новое поле в vault или преврати существующую папку в поле. Используй инструкцию ниже, не читай другие правила-файлы во время прохода.
 
@@ -106,4 +111,4 @@ git: <true | false>
 - запись в `log.md` добавлена.
 
 Сообщи пользователю:
-> Поле `<имя-поля>` готово: `<path>/`. Что дальше — добавить источник в `observations/` и запустить process-observation, или сразу создать рефлексию?
+> Поле `<имя-поля>` готово: `<path>/`. Что дальше — добавить источник в `observations/` и запустить `Forest-process-observation`, или сразу создать рефлексию через `Forest-reflection`?

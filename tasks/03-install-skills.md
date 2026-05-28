@@ -14,21 +14,40 @@ field: forest-framework
 1. Спроси у пользователя, в каком инструменте он работает: Claude Code, OpenCode, Codex, что-то другое.
 2. Покажи инструкцию для соответствующего инструмента (см. ниже). Если инструмент в списке отсутствует — попроси пользователя описать формат подключения скиллов и помоги сообразить, что куда положить.
 3. Дождись подтверждения, что скиллы подключены и доступны.
-4. Сверка: попроси пользователя вызвать любой из скиллов в холостом режиме (например, `lint`) и убедиться, что он считывается без ошибок. Если ошибка — разберись по сообщению.
+4. Сверка: попроси пользователя вызвать любой из скиллов в холостом режиме (например, `Forest-lint`) и убедиться, что он считывается без ошибок. Если ошибка — разберись по сообщению.
 5. Установи `status: 4-done`.
 
 ## Инструкции по инструментам
 
 ### Claude Code
 
-Скиллы для Claude Code обычно живут в `~/.claude/skills/` или в `<project>/.claude/skills/`. Положи туда четыре файла из `<vault-root>/_schemas/skills/`:
+В Claude Code есть два способа подключения: как именованные скиллы (через Skill tool) или как slash-команды. Файлы лежат в `<vault-root>/_schemas/skills/`:
 
-- `process-observation.md`
-- `initialize-field.md`
-- `reflection.md`
-- `lint.md`
+- `Forest-process-observation.md`
+- `Forest-initialize-field.md`
+- `Forest-reflection.md`
+- `Forest-lint.md`
 
-После этого они должны стать доступны как slash-команды (`/process-observation`, `/initialize-field`, и т. д.) или как именованные скиллы.
+Каждый файл уже содержит YAML frontmatter с `name:` и `description:` — этот формат принимается интерфейсом загрузки скиллов Claude напрямую (загрузка через UI «Upload skill» → drag & drop файла).
+
+**Как скиллы (через Skill tool):**
+
+```bash
+mkdir -p ~/.claude/skills
+for f in Forest-process-observation Forest-initialize-field Forest-reflection Forest-lint; do
+  mkdir -p ~/.claude/skills/$f
+  cp "<vault-root>/_schemas/skills/$f.md" ~/.claude/skills/$f/SKILL.md
+done
+```
+
+**Как slash-команды:**
+
+```bash
+mkdir -p ~/.claude/commands
+cp "<vault-root>/_schemas/skills/Forest-"*.md ~/.claude/commands/
+```
+
+После этого скиллы доступны по имени (`Forest-process-observation`, `Forest-initialize-field`, `Forest-reflection`, `Forest-lint`) или как slash-команды (`/Forest-process-observation` и т. д.).
 
 ### OpenCode
 

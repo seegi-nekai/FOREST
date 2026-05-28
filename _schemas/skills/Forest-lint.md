@@ -1,4 +1,9 @@
-# Skill: lint
+---
+name: Forest-lint
+description: Check structural integrity of a FOREST vault — broken wikilinks, duplicates, orphan notes, layer mismatches between observations/evergreens/reflections. Use when the user asks to audit the vault or a specific field — phrases like "lint vault", "audit notes", "check integrity", "проверь vault", "найди битые связи".
+---
+
+# Skill: Forest-lint
 
 Пройдись по vault или указанному полю и проверь структурную целостность: битые ссылки, дубли, осиротевшие заметки, расхождения между слоями. Идея заимствована у Карпатого (операция `lint` поверх персональной LLM-вики) и адаптирована под FOREST.
 
@@ -63,7 +68,7 @@
   > В `<file>` встретился фрагмент, который выглядит как evergreen-определение: «<фрагмент>». Вынести в `<field>/evergreens/`?
 
 - **Источник в `observations/`, на который не ссылается ни одна evergreen**, существует дольше 7 дней:
-  > Источник `<file>` лежит в `observations/` <N> дней без интеграции. Запустить process-observation для него, заархивировать или пропустить?
+  > Источник `<file>` лежит в `observations/` <N> дней без интеграции. Запустить `Forest-process-observation` для него, заархивировать или пропустить?
 
 - **Кандидат в тропу** — кластер из 5+ кросс-полевых evergreens по близкой теме, для которого ещё нет файла в `_trails/`. Детектится через комбинацию: пересекающиеся wiki-ссылки между evergreens разных полей, общие теги, семантическая близость формулировок:
   > По теме «<тема>» в полях <list> накопилось <N> кросс-полевых evergreens, тропы нет:
