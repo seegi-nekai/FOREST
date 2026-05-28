@@ -3,7 +3,7 @@ name: forest-process-observation
 description: Process raw sources from observations/ in a FOREST vault — extract atomic ideas into evergreens/ and create cross-field links. Use when the user adds a new source file to observations/ or asks to integrate sources — phrases like "process observation", "integrate sources", "обработай источник", "разбери наблюдение".
 ---
 
-# Skill: Forest-process-observation
+# Skill: forest-process-observation
 
 Найди новые источники в `observations/` и интегрируй каждый в evergreens соответствующего поля плюс кросс-полевые связи. Используй инструкцию ниже, не читай другие правила-файлы во время прохода.
 

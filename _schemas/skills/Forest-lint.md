@@ -3,7 +3,7 @@ name: forest-lint
 description: Check structural integrity of a FOREST vault — broken wikilinks, duplicates, orphan notes, layer mismatches between observations/evergreens/reflections. Use when the user asks to audit the vault or a specific field — phrases like "lint vault", "audit notes", "check integrity", "проверь vault", "найди битые связи".
 ---
 
-# Skill: Forest-lint
+# Skill: forest-lint
 
 Пройдись по vault или указанному полю и проверь структурную целостность: битые ссылки, дубли, осиротевшие заметки, расхождения между слоями. Идея заимствована у Карпатого (операция `lint` поверх персональной LLM-вики) и адаптирована под FOREST.
 

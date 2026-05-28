@@ -3,7 +3,7 @@ name: forest-initialize-field
 description: Create a new field in a FOREST vault or convert an existing folder into a field. Use when the user wants to add a new long-running area or theme — phrases like "create field", "new field", "add area", "заведи поле", "новое поле".
 ---
 
-# Skill: Forest-initialize-field
+# Skill: forest-initialize-field
 
 Создай новое поле в vault или преврати существующую папку в поле. Используй инструкцию ниже, не читай другие правила-файлы во время прохода.
 

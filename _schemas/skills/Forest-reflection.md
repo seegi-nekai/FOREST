@@ -3,7 +3,7 @@ name: forest-reflection
 description: Turn freeform reflection text (transcript or written note) into a reflection file (slepok / decision / project) in the appropriate FOREST field, grounded in evergreens. Use when the user wants to capture a snapshot of understanding, a decision, or a project — phrases like "reflection", "slepok", "log decision", "слепок", "зафиксировать решение", "записать проект".
 ---
 
-# Skill: Forest-reflection
+# Skill: forest-reflection
 
 Преврати пользовательскую рефлексию (надиктованный или написанный текст) в файл reflection в нужном поле, заземлённый на evergreens этого поля и связанный кросс-полевыми ссылками. Используй инструкцию ниже, не читай другие правила-файлы во время прохода.
 
