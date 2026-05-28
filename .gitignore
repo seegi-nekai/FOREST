@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# iCloud
+.iCloud
+*.icloud
+
+# Obsidian (local workspace state — не выезжает с vault)
+.obsidian/workspace*
+.obsidian/cache
+.obsidian/appearance.json
+
+# Editors
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# OS / temp
+Thumbs.db
+ehthumbs.db
+Desktop.ini
