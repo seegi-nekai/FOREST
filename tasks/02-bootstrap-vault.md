@@ -1,6 +1,6 @@
 ---
 type: task
-status: 1-open
+status: 4-done
 created: 2026-05-28
 field: forest-framework
 ---
@@ -42,7 +42,7 @@ field: forest-framework
 
    Хронологический append-only журнал. Конвенция заголовка и тела — в `CLAUDE.md` (раздел «Логирование»).
    ```
-4. Создай пустую папку `<vault-root>/trails/`.
+4. Создай пустую папку `<vault-root>/_trails/`.
 5. Создай пустую папку `<vault-root>/_archive/`.
 6. Проверь, что все пять артефактов на месте.
 7. Установи `status: 4-done`.
